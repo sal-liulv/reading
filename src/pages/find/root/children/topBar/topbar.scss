@@ -1,0 +1,33 @@
+.top-bar{
+  margin-left: 60px;
+  // background: #eeeeee;
+  .title{
+    display: flex;
+    margin-top: 75px;
+    img{
+      width: 500px;
+    }
+  }
+  .top-scroll{
+    height: 930px;
+    margin-top: 60px;
+    width: 1024px;
+    display: flex;
+    .wrap{
+      height: 930px;
+      display: flex;
+    }
+  }
+  .more{
+    margin: 0 60px;
+    height: 130px;
+    background: #FFFBFF;
+    border: 4px solid #F7F7F7;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 130px;
+    font-size: 40px;
+    color: #188AEF;
+
+  }
+}

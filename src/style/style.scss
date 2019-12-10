@@ -1,0 +1,151 @@
+html,body, #root{
+  width: 100%;
+  height: 100%;
+}
+.border-top{
+	position: relative;
+}
+.border-top::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1px;
+	border-top: 1px solid #ccc;
+	transform: scaleY(0.5);
+}
+.border-bottom{
+	position: relative;
+}
+.border-bottom::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid #ccc;
+	transform: scaleY(0.5);
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    // visibility: visible;
+  }
+  to {
+    transform: translate3d(0);
+  }
+}
+@keyframes slideOutRight {
+  0% {
+    transform: translateZ(0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes slideInDown {
+  0% {
+    transform: translate(0, 100%);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+@keyframes slideOutDown {
+  0% {
+    transform: translate(0, 0);
+  }
+  to {
+    visibility: hidden;
+    transform: translate(0, 100%);
+  }
+}
+.slideInRight {
+  animation-name: slideInRight;
+}
+.slideOutRight {
+  animation-name: slideOutRight;
+}
+.slideInDown {
+  animation-name: slideInDown;
+}
+.slideOutDown {
+  animation-name: slideOutDown;
+}
+.fadeInDown{
+  animation-name: fadeInDown;
+}
+.fadeOutDown{
+  animation-name: fadeOutDown;
+}
+.fadeInDown
+.fadeOutDown
+.slideInRight,
+.slideOutRight,
+.slideInDown,
+.slideOutDown {
+  animation-duration: 200ms;
+}
+
+.page-wrap{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 49px;
+  width: 100%;
+  background: #fff;
+  &.subpage {
+    bottom: 0;
+    z-index: 100;
+  }
+  &.modal-page {
+    bottom: 0;
+    z-index: 100;
+  }
+  .content {
+    position: absolute;
+    top: 44px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+.right-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 10px;
+  font-size: 80px;
+  line-height: 180px;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.more-overflow{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; //行数
+  -webkit-box-orient: vertical;
+}
+
+.mui-toast-container{
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%,-50%);
+}

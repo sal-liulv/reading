@@ -1,0 +1,26 @@
+.app-tabs{
+  width: 100%;
+  height: 49px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #fff;
+  .tab{
+    color: #999;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .fa{
+      font-size: 20px;
+    }
+    .text{
+      font-size: 12px;
+    }
+    &.active{
+      color: #42A8F0;
+    }
+  }
+}

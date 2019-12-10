@@ -1,0 +1,42 @@
+.login{
+  p{
+    margin-left: 63px;
+    width: 1010px;
+    height: 157px;
+    display: flex;
+    align-items: center;
+    span{
+      font-size: 43px;
+      color: #010101;
+      margin-right: 30px;
+    }
+    input{
+      border: none;
+      background: white;
+      outline: none;
+      margin: 0;
+      padding:0;
+      height: auto;
+      width: auto;
+    }
+  }
+  .username{
+    margin-top: 200px;
+  }
+  .save{
+    width: 447px;
+    height: 98px;
+    margin: 0 auto;
+    background: #F2F2F2;
+    font-size: 38px;
+    color: #C4C4C4;
+    text-align: center;
+    line-height: 98px;
+    margin-top: 185px;
+    border-radius: 20px;
+  }
+  .show{
+    background:#FF5173 ;
+    color: white;
+  }
+}

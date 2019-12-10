@@ -1,0 +1,42 @@
+.books-item{
+  width: 241px;
+  height: 440px;
+  margin-bottom: 113px;
+  // margin-right: 50px;
+  // background: #eeeeee;
+  
+  position: relative;
+  .select_icon{
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .icon-show{
+    z-index: 1;
+  }
+  .icon-active{
+    color: #5EB5F2;
+  }
+  .img{
+    width: 241px;
+    height: 351px;
+    position: relative;
+    margin-bottom: 24px;
+    background: #eeeeee;
+    img{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    } 
+  }
+  p{
+    color: #232323;
+    font-size: 28px;
+    line-height: 30px;
+  }
+}
